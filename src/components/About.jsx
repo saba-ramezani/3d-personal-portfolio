@@ -8,7 +8,7 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-full'>
+  <Tilt className='xs:w-[190px] w-full'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
@@ -40,18 +40,16 @@ const About = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={styles.sectionHeadText}>About Me</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-secondary text-[17px] max-w-[49rem] leading-[35px]'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        I'm a 23-year-old Computer Engineering graduate with a strong background in developing <span className="text-white text-[16px] bg-[rgba(82,51,255,0.7)] px-2 rounded-lg" >React Native</span> applications and web applications using <span className="text-white text-[16px] bg-[rgba(82,51,255,0.7)] px-2 rounded-lg">React</span>. 
+        I'm passionate about <span className="text-white text-[16px] bg-[rgba(82,51,255,0.7)] px-2 rounded-lg"> Artificial Intelligence</span>  and <span className="text-white text-[16px] bg-[rgba(82,51,255,0.7)] px-2 rounded-lg">Machine Learning</span> , particularly in <span className="text-white text-[16px] bg-[rgba(82,51,255,0.7)] px-2 rounded-lg">Natural Language Processing</span>, <span className="text-white text-[16px] bg-[rgba(82,51,255,0.7)] px-2 rounded-lg">Graph Analysis</span> , and <span className="text-white text-[16px] bg-[rgba(82,51,255,0.7)] px-2 rounded-lg">Data Mining</span> .
+         As a dedicated self-learner and a collaborative team player, I'm eager to continue expanding my knowledge and skills in these fields.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

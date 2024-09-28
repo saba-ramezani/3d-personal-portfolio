@@ -50,12 +50,16 @@ import {
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "Graph Analysis",
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "NLP",
       icon: creator,
+    },
+    {
+      title: "Data Mining",
+      icon: web,
     },
   ];
   
