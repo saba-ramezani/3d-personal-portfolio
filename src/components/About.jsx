@@ -1,5 +1,5 @@
 import React from "react";
-//import Tilt from "react-tilt";
+import { Tilt } from 'react-tilt';
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
@@ -7,7 +7,7 @@ import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
-/*const ServiceCard = ({ index, title, icon }) => (
+const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[190px] w-full'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
@@ -33,7 +33,7 @@ import { fadeIn, textVariant } from "../utils/motion";
       </div>
     </motion.div>
   </Tilt>
-);*/
+);
 
 const About = () => {
   return (
@@ -52,11 +52,11 @@ const About = () => {
          As a dedicated self-learner and a collaborative team player, I'm eager to continue expanding my knowledge and skills in these fields.
       </motion.p>
 
-      {/*<div className='mt-20 flex flex-wrap gap-10'>
+      <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
-      </div>*/}
+      </div>
     </>
   );
 };

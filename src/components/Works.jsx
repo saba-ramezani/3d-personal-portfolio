@@ -1,5 +1,5 @@
 import React from "react";
-//import Tilt from "react-tilt";
+import { Tilt } from 'react-tilt';
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
@@ -8,7 +8,7 @@ import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
-/*const ProjectCard = ({
+const ProjectCard = ({
   index,
   name,
   description,
@@ -65,7 +65,7 @@ import { fadeIn, textVariant } from "../utils/motion";
       </Tilt>
     </motion.div>
   );
-};*/
+};
 
 const Works = () => {
   return (
@@ -88,11 +88,11 @@ const Works = () => {
         </motion.p>
       </div>
 
-      {/*<div className='mt-20 flex flex-wrap gap-7'>
+      <div className='mt-20 flex flex-wrap gap-7'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
-      </div>*/}
+      </div>
     </>
   );
 };
